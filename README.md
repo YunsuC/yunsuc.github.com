@@ -59,4 +59,13 @@ From the results, we verified that the Matrix for finding the x-gradient and y-g
 
 Unlike the Toy problem above, Poisson blending had to solve the least squares problem.
 
+![image](https://user-images.githubusercontent.com/44015662/47511048-54031080-d8b4-11e8-88cd-ddb095b4e779.png)
+
+The second term of the equation is an expression for the masked boundary. However, in my source code, I excluded this term because the boundary portion became awkward with the image from the first term. 
+The background image and input image to be used for Poisson blending are shown below.
+
+
+
 ## Your Own Examples
+
+
