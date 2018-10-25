@@ -64,6 +64,9 @@ Unlike the Toy problem above, Poisson blending had to solve the least squares pr
 The second term of the equation is an expression for the masked boundary. However, in my source code, I excluded this term because the boundary portion became awkward with the image from the first term. 
 The background image and input image to be used for Poisson blending are shown below.
 
+![image](https://user-images.githubusercontent.com/44015662/47511086-6ed58500-d8b4-11e8-8cc2-eeb9047e4f7b.png)
+
+![image](https://user-images.githubusercontent.com/44015662/47511094-7301a280-d8b4-11e8-8aff-22cde9a25d44.png) ![image](https://user-images.githubusercontent.com/44015662/47511098-7432cf80-d8b4-11e8-9ba0-b7247dda09e8.png)
 
 
 ## Your Own Examples
