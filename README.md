@@ -70,7 +70,31 @@ The background image and input image to be used for Poisson blending are shown b
 
 In addition, to obtain a more natural image, we used a technique of mixing the input image with the gradient of the background image. In Equation above, Av = b, the elements of vector b are put into conditional as follows.
 
+![image](https://user-images.githubusercontent.com/44015662/47511214-b65c1100-d8b4-11e8-8eb6-baae25561caa.png)
+![image](https://user-images.githubusercontent.com/44015662/47511221-b825d480-d8b4-11e8-8b12-64c205fda955.png)
+
+The results of Poisson blending are as follows.
+
+![image](https://user-images.githubusercontent.com/44015662/47511222-b9ef9800-d8b4-11e8-9ec5-bc004cb9fd52.png)
+
+Input image (left), Poisson Blended image (right)
+
+![image](https://user-images.githubusercontent.com/44015662/47511227-bc51f200-d8b4-11e8-8dc3-b38cdd8bfa78.png)
+![image](https://user-images.githubusercontent.com/44015662/47511235-bf4ce280-d8b4-11e8-8265-33319fb854ce.png)
+
+For some results, Poisson blending did not work well because the background brightness varies greatly.
+
+![image](https://user-images.githubusercontent.com/44015662/47511242-c3790000-d8b4-11e8-90ba-a2a8d445750f.png)
+![image](https://user-images.githubusercontent.com/44015662/47511253-c83db400-d8b4-11e8-8be4-6c3d1b035cbe.png)
+
+In order to solve this case, we blended naturally by histogram matching with surrounding background values.
+
+![image](https://user-images.githubusercontent.com/44015662/47511264-cd026800-d8b4-11e8-807d-bc9fc715b669.png)
+
+However, there were still some points to be supplemented.
 
 ## Your Own Examples
 
-
+![image](https://user-images.githubusercontent.com/44015662/47511269-cffd5880-d8b4-11e8-9aa1-ccdd7445b0e8.png) ![image](https://user-images.githubusercontent.com/44015662/47511273-d25fb280-d8b4-11e8-8323-7d101133c308.png)
+![image](https://user-images.githubusercontent.com/44015662/47511278-d7246680-d8b4-11e8-8bf5-87c8bd7140f4.png)![image](https://user-images.githubusercontent.com/44015662/47511292-d986c080-d8b4-11e8-87e3-2c614ead40aa.png)
+![image](https://user-images.githubusercontent.com/44015662/47511300-de4b7480-d8b4-11e8-9ceb-1bfc81c81004.png)![image](https://user-images.githubusercontent.com/44015662/47511305-e0153800-d8b4-11e8-992d-6becdaa3f2ca.png)
