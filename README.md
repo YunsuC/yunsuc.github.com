@@ -7,6 +7,9 @@ To perform Poisson Blending, we proceeded with the Toy Problem to restore the or
 To obtain an image satisfying all three equations, we wrote the source code as shown below.
 Denote the intensity of the source image at (x,y) as s(x,y), and the values of the image to solve for as v(x,y). 
 
+![image](https://user-images.githubusercontent.com/44015662/47510708-a2fc7600-d8b3-11e8-8f29-a19b82ea8faa.png)
+
+
 ``` 
 I = double(imread('toy_problem.png'));
 [imh, imw, nn] = size(I);
@@ -45,6 +48,8 @@ v = A\b';
 v = reshape(v,[119,110]);
 imshow(v,[])
 ```
+
+Since Matrix A is sparse, we use MATLAB’s sparse function to initialize it so that the \ operator can run fast. The results of the Toy Problem is as follows. From the left are the original image, the output image and the error image of the two images.
 
 ## Poisson Blending with Mixed Gradients
 
