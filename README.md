@@ -68,6 +68,8 @@ The background image and input image to be used for Poisson blending are shown b
 
 ![image](https://user-images.githubusercontent.com/44015662/47511094-7301a280-d8b4-11e8-8aff-22cde9a25d44.png) ![image](https://user-images.githubusercontent.com/44015662/47511098-7432cf80-d8b4-11e8-9ba0-b7247dda09e8.png)
 
+In addition, to obtain a more natural image, we used a technique of mixing the input image with the gradient of the background image. In Equation above, Av = b, the elements of vector b are put into conditional as follows.
+
 
 ## Your Own Examples
 
