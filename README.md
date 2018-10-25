@@ -51,6 +51,12 @@ imshow(v,[])
 
 Since Matrix A is sparse, we use MATLAB’s sparse function to initialize it so that the \ operator can run fast. The results of the Toy Problem is as follows. From the left are the original image, the output image and the error image of the two images.
 
+![image](https://user-images.githubusercontent.com/44015662/47510922-169e8300-d8b4-11e8-972f-03818b34ad5d.png) ![image](https://user-images.githubusercontent.com/44015662/47510927-1900dd00-d8b4-11e8-95b0-645af0ba5884.png) ![image](https://user-images.githubusercontent.com/44015662/47510933-1bfbcd80-d8b4-11e8-8d12-be44f989050e.png)
+
+From the results, we verified that the Matrix for finding the x-gradient and y-gradient of the image works well.
+
 ## Poisson Blending with Mixed Gradients
+
+Unlike the Toy problem above, Poisson blending had to solve the least squares problem.
 
 ## Your Own Examples
